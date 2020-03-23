@@ -16,15 +16,16 @@
 
 	<div class="row"></div>
 	<!--функционал добавления нового товара-->
-	<form action="index.php" method="get">
-	<input type="text" placeholder="Название">
-	<input type="text" placeholder="Цена">
+	<form action="index.php" method="post">
+	<input type="text" name="name" placeholder="Название">
+	<input type="text" name="price" placeholder="Цена">
 		<!--<form enctype="multipart/form-data" method="post">-->
 		<input type="file">
 		<!--</form>-->
 	<!--Почему ширина и высота кнопки не менялась пока я не добавил value?-->
 	<input class="add" type="submit" value="Добавить"><br><br>
 	<input class="reset" type="reset" value="Удалить"><br><br><br><br>
+	</form>
 
 
 	<!--таблица добавленых товаров-->
@@ -36,6 +37,13 @@
 			<th>Описание</th>
 		</thead>
 		<tbody>
+			<tr>
+				<td><?php echo $name; ?></td>
+				<td></td>
+				<td><?php echo $price; ?></td>
+				<td></td>
+			</tr>
+
 			<tr>
 				<td>Iphone 5</td>
 				<td><a href="https://www.google.com/search?q=%D0%B0%D0%B9%D1%84%D0%BE%D0%BD+5&sxsrf=ALeKk006hysWjVxYdH5D7RlonZQZXMSaxw:1584630408077&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjAj8uk6KboAhVnk4sKHSZTCMAQ_AUoAXoECAwQAw&biw=958&bih=426">Ссылка на фото</a></td>
@@ -89,6 +97,6 @@
 
 	</table>
 
-	</form>
+	
 </body>
 </html>
