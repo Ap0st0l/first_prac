@@ -1,0 +1,82 @@
+/*Стиль body*/
+body{
+
+margin:100px;
+width: 80%;
+background-image: url(bg.jpg);
+}
+
+/*Стиль фотки, Карл*/
+img{
+border-radius: 20px;
+}
+
+
+/*Стиль заголовка, Карл*/
+h1{
+text-align: center;
+color: white;	
+}
+
+/*Стиль row*/
+.row{
+height: 40px;
+}
+
+/*Стиль input*/
+input{
+height: 30px;
+width: 24.7%;
+border: 0;
+background-color: grey;
+opacity: 0.8;
+color: white;
+font-size: 130%;
+
+}
+
+.add{
+background-color: green;
+opacity: 0.8;
+border-radius: 20px;
+}
+
+.reset{
+background-color: red;
+opacity: 0.8;
+position: absolute;
+right: 14.8%;
+width: 5%;
+border-radius: 20px;
+}
+
+
+
+/*Стиль таблицы*/
+
+table{
+width: 100%;
+opacity: 0.8;
+text-align: center;
+
+
+}
+th {
+height:40px; 
+width: 25%;
+background-color: grey;
+color: white;
+font-family: Andale Mono, monospace;
+font-size: xx-large;
+text-decoration: underline;
+}
+
+tr {
+height: 30px;
+opacity: 1;	
+background-color: grey;
+font-family: Andale Mono, monospace;
+color: white;
+font-size: large;
+}
+
